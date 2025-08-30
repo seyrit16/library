@@ -5,6 +5,7 @@ import com.example.library.repository.ClientRepository;
 import com.example.library.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.ModelAttribute;
 
 import java.util.List;
 
@@ -24,8 +25,7 @@ public class ClientServiceImpl implements ClientService {
     }
 
     @Override
-    public Client updateClient(Long id, Client client) {
-        client.setId(id);
+    public Client updateClient(@ModelAttribute Client client) {
         return clientRepository.save(client);
     }
 

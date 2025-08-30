@@ -14,6 +14,5 @@ public interface LoanService {
 
     List<Loan> getAllLoans();
 
-    // Специальный метод для REST-задания: получить все активные займы с данными клиента и книги
     List<LoanDto> getAllActiveLoans();
 }

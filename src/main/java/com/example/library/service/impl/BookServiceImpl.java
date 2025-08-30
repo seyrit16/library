@@ -29,8 +29,7 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public Book updateBook(Long id, Book book) {
-        book.setId(id);
+    public Book updateBook(Book book) {
         return bookRepository.save(book);
     }
 

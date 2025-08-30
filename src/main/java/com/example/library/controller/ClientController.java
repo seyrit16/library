@@ -43,8 +43,8 @@ public class ClientController {
     }
 
     @PostMapping("/edit/{id}")
-    public String updateClient(@PathVariable Long id, Client client){
-        clientService.updateClient(id, client);
+    public String updateClient(Client client){
+        clientService.updateClient(client);
         return "redirect:/clients";
     }
 }
