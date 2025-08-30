@@ -82,12 +82,36 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialec
 spring.thymeleaf.cache=false
 ```
 
+### Если другой url к базе
+Впишите свой url здесь
+```
+spring.datasource.url=jdbc:postgresql://localhost:5432/library
+```
+
+### Если другой пользователь в базе
+Впишите свой username здесь
+```
+spring.datasource.username=library_user
+```
+
+### Если другой пароль 
+Впишите свой username здесь
+```
+spring.datasource.password=library_pass
+```
+
+### Для запуска на другом порту
+Впишите свой порт
+```
+server.port=8080
+```
+
 ### Сборка и запуск
 
 1. **Клонирование репозитория:**
 ```bash
 git clone https://github.com/seyrit16/library
-cd book-library
+cd library
 ```
 
 2. **Сборка проекта:**
@@ -97,7 +121,7 @@ mvn clean package
 
 3. **Запуск приложения:**
 ```bash
-java -jar target/book-library-0.0.1-SNAPSHOT.jar
+java -jar target/library-0.0.1-SNAPSHOT.jar
 ```
 
 ### Автоматическое создание схемы
@@ -112,6 +136,8 @@ spring.jpa.hibernate.ddl-auto=update
 После запуска приложение будет доступно по адресу:
 - **Веб-интерфейс**: http://localhost:8080
 - **REST API**: http://localhost:8080/api/loans
+> [!WARNING]
+> Если был изменен порт, то вместо 8080 нужно использовать его
 
 ## Структура проекта
 
