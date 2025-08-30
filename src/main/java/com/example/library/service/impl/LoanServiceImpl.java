@@ -32,7 +32,8 @@ public class LoanServiceImpl implements LoanService {
 
     @Override
     public Loan getLoanById(Long id) {
-        return loanRepository.findById(id).get();
+        return loanRepository.findById(id)
+                .orElseThrow(()-> new RuntimeException("Loan not found with id" + id));
     }
 
     @Override
