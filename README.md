@@ -32,7 +32,7 @@
     "clientBirthDate": "1990-05-15",
     "bookTitle": "Война и мир",
     "bookAuthor": "Лев Толстой",
-    "bookIsbn": "978-5-17-123456-7",
+    "bookIsbn": "9785171234567",
     "loanDate": "2024-08-15"
   }
 ]
