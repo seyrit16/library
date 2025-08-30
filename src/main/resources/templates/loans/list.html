@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: common-header"></head>
+<body>
+<h2>Loans</h2>
+<a class="btn btn-primary mb-2" th:href="@{/loans/new}">Add Loan</a>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Client</th>
+        <th>Book</th>
+        <th>Loan Date</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="loan : ${loans}">
+        <td th:text="${loan.client.surname + ' ' + loan.client.name + ' ' + loan.client.patronymic}"></td>
+        <td th:text="${loan.book.title}"></td>
+        <td th:text="${loan.loanDate}"></td>
+        <td>
+            <a class="btn btn-sm btn-danger" th:href="@{/loans/delete/{id}(id=${loan.id})}">Delete</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
