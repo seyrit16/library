@@ -20,7 +20,7 @@
 - Интерфейс взятия книги на прочтение
 
 ### REST API
-- `GET /api/readers` - получение JSON со всеми читающими клиентами и взятыми книгами
+- `GET /api/loans` - получение JSON со всеми читающими клиентами и взятыми книгами
 
 Формат ответа:
 ```json
@@ -111,7 +111,7 @@ spring.jpa.hibernate.ddl-auto=update
 
 После запуска приложение будет доступно по адресу:
 - **Веб-интерфейс**: http://localhost:8080
-- **REST API**: http://localhost:8080/api/readers
+- **REST API**: http://localhost:8080/api/loans
 
 ## Структура проекта
 
