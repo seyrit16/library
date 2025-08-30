@@ -1,7 +1,7 @@
 package com.example.library.service;
 
-import com.example.book_library.dto.LoanDto;
-import com.example.book_library.model.Loan;
+import com.example.library.dto.LoanDto;
+import com.example.library.model.Loan;
 
 import java.util.List;
 

@@ -1,9 +1,9 @@
 package com.example.library.service.impl;
 
-import com.example.book_library.dto.LoanDto;
-import com.example.book_library.model.Loan;
-import com.example.book_library.repository.LoanRepository;
-import com.example.book_library.service.LoanService;
+import com.example.library.dto.LoanDto;
+import com.example.library.model.Loan;
+import com.example.library.repository.LoanRepository;
+import com.example.library.service.LoanService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

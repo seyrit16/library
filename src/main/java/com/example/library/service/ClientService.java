@@ -1,6 +1,6 @@
 package com.example.library.service;
 
-import com.example.book_library.model.Client;
+import com.example.library.model.Client;
 
 import java.util.List;
 

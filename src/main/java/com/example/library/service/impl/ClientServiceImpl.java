@@ -1,8 +1,8 @@
 package com.example.library.service.impl;
 
-import com.example.book_library.model.Client;
-import com.example.book_library.repository.ClientRepository;
-import com.example.book_library.service.ClientService;
+import com.example.library.model.Client;
+import com.example.library.repository.ClientRepository;
+import com.example.library.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
